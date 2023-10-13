@@ -91,8 +91,10 @@ public class DoctorService {
         return userId == null && !DOCTOR.equals(type);
     }
 
+
     private Doctor fetchUserFromSession(HttpServletRequest request) {
         Integer userId = SessionUtils.getCurrentUserId(request);
         return doctorRepository.findById(userId).get();
     }
+
 }
