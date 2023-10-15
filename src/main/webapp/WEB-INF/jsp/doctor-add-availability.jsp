@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/doctor-add-availability.css">
+
     <title>Doctor's Dashboard</title>
 </head>
 <body>
