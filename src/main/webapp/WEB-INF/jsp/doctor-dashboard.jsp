@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Doctor's Dashboard</title>
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/doctor-dashboard.css">
+ <title>Doctor's Dashboard</title>
 </head>
 <body>
 <div style="position: relative;">
