@@ -20,12 +20,12 @@
                 Morning
             </td>
             <c:forEach var="availability" items="${morningAvailability}">
-            <td>
-                <a href="/doctor/availability//${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
-                    <c:out value="${availability.value}" />
-                </a>
-            </td>
-        </c:forEach>
+                <td>
+                    <a href="/doctor/availability/${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
+                        <c:out value="${availability.value}" />
+                    </a>
+                </td>
+            </c:forEach>
         </tr>
 
         <tr>
@@ -34,7 +34,7 @@
             </td>
             <c:forEach var="availability" items="${afternoonAvailability}">
                 <td>
-                    <a href="/doctor/availability//${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
+                    <a href="/doctor/availability/${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
                         <c:out value="${availability.value}" />
                     </a>
                 </td>
@@ -47,7 +47,7 @@
             </td>
             <c:forEach var="availability" items="${eveningAvailability}">
                 <td>
-                    <a href="/doctor/availability//${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
+                    <a href="/doctor/availability/${availability.id}" style="color: mediumpurple; text-decoration: none; font-weight:bold;">
                         <c:out value="${availability.value}" />
                     </a>
                 </td>

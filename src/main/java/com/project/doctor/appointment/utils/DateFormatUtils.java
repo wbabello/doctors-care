@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 
 public class DateFormatUtils {
 
-    private static final DateFormat dateFormat = new SimpleDateFormat("MMMM yyyy");
+    private static final DateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy");
 
     public static String formatDate(Long milliseconds) {
         return dateFormat.format(milliseconds);

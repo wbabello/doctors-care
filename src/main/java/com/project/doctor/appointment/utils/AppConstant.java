@@ -6,6 +6,9 @@ public class AppConstant {
         public static final String HOME_PAGE = "index";
         public static final String DOCTOR_DASHBOARD = "doctor-dashboard";
         public static final String DOCTOR_ADD_AVAILABILITY = "doctor-add-availability";
+        public static final String DOCTOR_EDIT_AVAILABILITY = "doctor-edit-availability";
+        public static final String PATIENT_DASHBOARD = "patient-dashboard";
+        public static final String PATIENT_BOOK_APPOINTMENT = "patient-book-appointment";
     }
 
     public static class LoginError {
@@ -34,6 +37,14 @@ public class AppConstant {
 
     public static final String DOCTOR_OBJ = "doctor";
 
+    public static final String PATIENT_OBJ = "patient";
+
+    public static final String APPOINTMENT = "appointment";
+
+    public static final String ADD_AVAILABILITIES_LIST = "addAvailabilitiesList";
+
+    public static final String DOCTOR_LIST = "doctorList";
+
     public static final String CURRENT_DATE = "currentDate";
 
     public static final String PATIENT = "Patient";
@@ -57,4 +68,6 @@ public class AppConstant {
     public static final String AFTERNOON_AVAILABILITY = "afternoonAvailability";
 
     public static final String EVENING_AVAILABILITY = "eveningAvailability";
+
+    public static final String APPOINTMENT_LIST = "appointmentList";
 }

@@ -15,4 +15,12 @@ public class Doctor extends User {
     public Doctor(String userName, String email, String password) {
         super(userName, email, password);
     }
+
+    public List<AddAvailability> getAddAvailabilities() {
+        return addAvailabilities;
+    }
+
+    public void setAddAvailabilities(List<AddAvailability> addAvailabilities) {
+        this.addAvailabilities = addAvailabilities;
+    }
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,4 +38,21 @@ public class DoctorController {
     public String addAvailability(@ModelAttribute(ADD_AVAILABILITY) AddAvailability addAvailability, Model model, HttpServletRequest request) {
         return doctorService.addAvailability(addAvailability, model, request);
     }
+
+    @GetMapping("/doctor/availability/{id}")
+    public String updateAvailabilityDashboard(@PathVariable("id") Integer id, Model model, HttpServletRequest request) {
+        return doctorService.updateAvailabilityDashboard(id, model, request);
+    }
+
+    @PostMapping("/doctor/availability/{id}")
+    public String updateAvailability(@PathVariable("id") Integer id, @ModelAttribute(ADD_AVAILABILITY) AddAvailability addAvailability, Model model, HttpServletRequest request) {
+        return doctorService.updateAvailability(id, addAvailability, model, request);
+    }
+
+    @GetMapping("/doctor/availability/{id}/delete")
+    public String deleteAvailability(@PathVariable("id") Integer id, Model model, HttpServletRequest request) {
+        return doctorService.deleteAvailability(id, model, request);
+    }
+
+
 }

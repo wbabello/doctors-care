@@ -85,16 +85,45 @@ public class DoctorService {
         return REDIRECT_DOCTOR;
     }
 
+    public String updateAvailabilityDashboard(Integer id, Model model, HttpServletRequest request) {
+        if(isInValidSession(request))
+            return HOME_PAGE;
+
+        Doctor doctor = fetchUserFromSession(request);
+        AddAvailability addAvailability = addAvailabilityRepository.findById(id).get();
+        Map<String, Object> objectMap = model.asMap();
+        objectMap.put(DOCTOR_OBJ, doctor);
+        objectMap.put(ADD_AVAILABILITY, addAvailability);
+        return DOCTOR_EDIT_AVAILABILITY;
+    }
+
+    public String updateAvailability(Integer id, AddAvailability updateAvailability, Model model, HttpServletRequest request) {
+        if(isInValidSession(request))
+            return HOME_PAGE;
+
+        AddAvailability addAvailability = addAvailabilityRepository.findById(id).get();
+        updateAvailability.setId(addAvailability.getId());
+        updateAvailability.setDoctor(addAvailability.getDoctor());
+        addAvailabilityRepository.save(updateAvailability);
+        return REDIRECT_DOCTOR;
+    }
+
+    public String deleteAvailability(Integer id, Model model, HttpServletRequest request) {
+        if(isInValidSession(request))
+            return HOME_PAGE;
+
+        addAvailabilityRepository.deleteById(id);
+        return REDIRECT_DOCTOR;
+    }
+
     private boolean isInValidSession(HttpServletRequest request) {
         Integer userId = SessionUtils.getCurrentUserId(request);
         String type = SessionUtils.getCurrentUserType(request);
         return userId == null && !DOCTOR.equals(type);
     }
 
-
     private Doctor fetchUserFromSession(HttpServletRequest request) {
         Integer userId = SessionUtils.getCurrentUserId(request);
         return doctorRepository.findById(userId).get();
     }
-
 }
