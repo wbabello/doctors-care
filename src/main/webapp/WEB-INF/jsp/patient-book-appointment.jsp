@@ -17,8 +17,8 @@
                 </td>
                 <td>
                     <form:select path="doctorName">
-                        <c:forEach var="dcotor" items="${doctorList}">
-                            <form:option value="${dcotor}" label="${dcotor}"/>
+                        <c:forEach var="doctor" items="${doctorList}">
+                            <form:option value="${doctor}" label="${doctor}"/>
                         </c:forEach>
                     </form:select>
                 </td>
