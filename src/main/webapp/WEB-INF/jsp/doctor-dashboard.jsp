@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/doctor-dashboard.css">
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
  <title>Doctor's Dashboard</title>
 </head>
 <body>

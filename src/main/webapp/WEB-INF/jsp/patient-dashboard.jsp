@@ -3,17 +3,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
     <title>Patient Dashboard</title>
 </head>
 <body>
 <div style="position: relative;">
-    <span style="color: black; font-size: xxx-large; font-weight:bold; text-align: center;">Hi, Patient</span>
-    <span style="float: right; font-size: large;"> <a href="/logout"> Logout </a> </span>
+    <span style="color: black; font-size: xxx-large; font-weight:bold; text-align: center;">Hello, ${patient.userName}</span>
+    <span style="float: right; font-size: large;"> <a href="/logout"> Back to LogIn </a> </span>
     <br/><br/>
     <span style="color: black; font-size: xx-large; font-weight:bold; text-align: center;">Health is important</span>
     <br/><br/>
 
-    <table style="border: 3px solid black; width: 40%">
+   <!--  <table style="border: 3px solid black; width: 40%"> -->
+    <table class = "patient">
         <tr>
             <th>
                 Date
@@ -40,6 +42,6 @@
         </c:forEach>
     </table>
     <br/> <br/>
-    <span style="font-size: large;"> <a href="/patient/book-appointment">Book a appointment</a> </span>
+    <span style="font-size: large;"> <a href="/patient/book-appointment">Book an appointment</a> </span>
 </div>
 </body>

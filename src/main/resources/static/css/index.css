@@ -1,13 +1,90 @@
 body{
-background-color: yellow;
+	/*margin: 65px;
+	padding: 25px;*/
+	font-family: sans-serif;
+	background-color: lightskyblue;	
+	border-radius: 8px;
+	border-color:blue;
+	border-style: solid;
+	height: 700px;
+	width: 900px;
+	margin: 25px;
+	padding: 25px;
 }
 
 .left{
-width: 100%;
-    padding: 10px;
-    border: 1px solid black;
+	width: 20%;
+    padding: 25px;
+    margin: 25px;
+    border: 2px solid blue;
     border-radius: 4px;
     box-sizing: border-box;
     float: left;
     display: inline-block;
 }
+
+.text-input {
+	background-color:yellow;
+}
+
+.styled-input {
+	background-color:lightgreen;
+	width:270px;
+}
+.styled-linput {
+	background-color:lightgreen;
+	width:255px;
+}
+
+.styled-upinput {
+	background-color:lightgreen;
+	width:440px;
+}
+
+
+.right{
+	width: 20%;
+    padding: 25px;
+    margin: 25px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+}
+
+.patient{
+	border: 3px solid black; 
+	width: 40%;	
+}
+
+.add-avlb{
+	width: 100%;
+    padding: 25px;
+    margin: 25px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+    height: 200px;
+	width: 400px;
+	margin: 25px;
+	padding: 25px;
+}
+
+.up-avlb{	    
+    border: 2px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+    height: 200px;
+	width: 520px;
+	margin: 30px;
+	padding: 30px;
+}
+
+
+
+
