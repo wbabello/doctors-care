@@ -67,8 +67,13 @@ body {
 }
 
 .patient {
-	border: 3px solid black;
+	/*border: 3px solid black;
+	width: 40%;*/
+	border: 2px solid black; /* Set a solid border for header cells and data cells */
 	width: 40%;
+    padding: 0px;  /*Add padding to cells */
+    text-align: center; /* Center-align cell content */
+    
 }
 
 .add-avlb {
@@ -92,4 +97,17 @@ body {
 	width: 520px;
 	margin: 30px;
 	padding: 30px;
+}
+
+.formrow-cont {
+		border-color:blue;
+		width:180px;
+		height:290px;
+		border-style: solid;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid black; /* Set a solid border for header cells and data cells */
+    padding: 1px; /* Add padding to cells */
+    text-align: center; /* Center-align cell content */
 }

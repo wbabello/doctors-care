@@ -15,7 +15,7 @@
     <br/><br/>
 
    <!--  <table style="border: 3px solid black; width: 40%"> -->
-    <table class = "patient">
+    <table class = "patient styled-table">
         <tr>
             <th>
                 Date
@@ -25,6 +25,9 @@
             </th>
             <th>
                 Time slot
+            </th>
+            <th>
+                Procedure
             </th>
         </tr>
         <c:forEach var="appointment" items="${appointmentList}">
@@ -37,6 +40,9 @@
                 </td>
                 <td>
                     <c:out value="${appointment.timeSlot}" />
+                </td>
+                 <td>
+                    <c:out value="${appointment.comment}" />
                 </td>
             </tr>
         </c:forEach>
